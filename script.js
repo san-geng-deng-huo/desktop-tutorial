@@ -16,4 +16,4 @@ btn.addEventListener('click', () => {
 // 页面加载完成提示
 window.addEventListener('load', () => {
     console.log('网页加载完成！可以正常预览和部署～');
-});
+});  
