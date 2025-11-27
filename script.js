@@ -12,7 +12,6 @@ btn.addEventListener('click', () => {
     // 控制台输出日志
     console.log(`按钮被点击了 ${clickCount} 次`);
 });
-
 // 页面加载完成
 window.addEventListener('load', () => {
     console.log('网页加载完成！可以正常预览和部署～');
