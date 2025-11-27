@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>你的页面标题</title>
+    <title>分步验证页面</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>这是我的第一个网页。</p>
+    <!-- 步骤1：是否烟科同学 -->
+    <div class="screen active" id="screen1">
+        <h1>是烟科同学吗？</h1>
+        <div class="btn-group">
+            <button id="btn-yes">是</button>
+            <button id="btn-no">否</button>
+        </div>
+    </div>
+
+    <!-- 步骤2：输入专业 -->
+    <div class="screen" id="screen2">
+        <h1>输入你的专业</h1>
+        <input type="text" id="major-input" placeholder="请输入任意专业">
+        <button id="btn-next2">确定</button>
+    </div>
+
+    <!-- 步骤3：选择学习小组 -->
+    <div class="screen" id="screen3">
+        <h1>选择你的学习小组</h1>
+        <div class="btn-group">
+            <button class="group-btn">java组</button>
+            <button class="group-btn">python组</button>
+            <button class="group-btn">前端组</button>
+        </div>
+    </div>
+
+    <!-- 步骤4：输入姓名 -->
+    <div class="screen" id="screen4">
+        <h1>输入你的姓名</h1>
+        <input type="text" id="name-input" placeholder="请输入你的姓名">
+        <button id="btn-submit">确认</button>
+    </div>
+
+    <!-- 最终页面：欢迎 -->
+    <div class="screen" id="screen-final">
+        <h1>欢迎来到我的网页</h1>
+    </div>
+
+    <!-- 警告页面：冒充姓名 -->
+    <div class="screen warning-screen" id="screen-warning">
+        <h1>大胆狂徒，竟敢冒充吾之真名，你已有取死之道！</h1>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
